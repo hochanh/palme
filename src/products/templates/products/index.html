@@ -1,0 +1,14 @@
+{% load humanize %}
+{% if product_list %}
+    <ul>
+      {% for product, form in product_list %}
+        <li>
+          {{ product.name }}: {{ product.price|floatformat:2|intcomma }}
+          {{ form.render }}
+          <hr/>
+        </li>
+      {% endfor %}
+    </ul>
+{% else %}
+    <p>No products are available.</p>
+{% endif %}
