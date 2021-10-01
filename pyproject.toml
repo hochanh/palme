@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "palme"
+version = "0.1.0"
+description = ""
+authors = ["manhtai <vo@manhtai.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2.7"
+
+[tool.poetry.dev-dependencies]
+ipython = "^7.28.0"
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
