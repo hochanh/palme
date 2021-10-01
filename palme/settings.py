@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', default_sk)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pal-me.herokuapp.com' ]
+ALLOWED_HOSTS = ['pal-me.herokuapp.com']
 
 
 # Application definition
@@ -130,7 +130,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
